@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Tamagotchi</title>
+</head>
+<body>
+  <h1> It's been fed: {{ player.initialEat }} </h1>
+  <p>Your Tamagotchi's name is: {{ player.getName }}. He is already fed, has played and has slept. When you start the game you'll have certain amount of time to feed him, play with him and let him sleep before he dies. Look after the timer. </p>
+  <form action="/feed" method="post">
+    <button type="submit" class="btn">Start Countdown</button>
+  </form>
+  <!-- <form action="/game" method="post">
+    <button type="submit" class="btn">Feed me!</button>
+  </form>
+
+  <form action="/game" method="post">
+    <button type="submit" class="btn">Play with Me!</button>
+  </form>
+
+  <form action="/game" method="post">
+    <button type="submit" class="btn">Let me sleep!</button>
+  </form> -->
+</body>
+</html>
